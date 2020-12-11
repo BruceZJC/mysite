@@ -13,8 +13,16 @@
         <meta charset="utf-8"><link rel="icon" href="this.jfif">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            /* css 代码  */
+            #header1{
+                color : black;
+                background-color:orange;
+                padding:20px;
+            }
+            div{
+                background-color:powerorange;
+            }
         </style>
+        <link rel="stylesheet" href="style.css">
         <script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
         <script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script>
         <script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
@@ -22,43 +30,45 @@
         <script src="https://code.highcharts.com.cn/highcharts/themes/grid-light.js"></script>
     </head>
     <body>
+        <h2 id='header1' >IAR 07 Wild Fire Prediction website</h2>
         <div id="container" style="min-width:400px;height:400px"></div>
         <script>
             var chart = Highcharts.chart('container', {
-    chart: {
-        type: 'line'
-    },
-    title: {
-        text: 'FWI Prediction'
-    },
-    subtitle: {
-        text: 'Data Source: NASA FIRMS'
-    },
-    xAxis: {
-        categories: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May.', 'Jun.', 'Jul.', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.']
-    },
-    yAxis: {
-        title: {
-            text: 'Fiew_weather_index'
-        }
-    },
-    plotOptions: {
-        line: {
-            dataLabels: {
-                enabled: true          
+            chart: {
+              type: 'line'
+              },
+            title: {
+              text: 'FWI Prediction Chart'
+              },
+            subtitle: {
+              text: 'Data Source: NASA FIRMS'
+              },
+            xAxis: {
+              categories: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May.', 'Jun.', 'Jul.', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.']
+             },
+            yAxis: {
+              title: {
+                 text: 'Fiew_weather_index'
+                }
             },
+            plotOptions: {
+              line: {
+                dataLabels: {
+                  enabled: true          
+                },
             enableMouseTracking: false
-        }
-    },
-    series: [{
-        name: 'First One',
-        data: [1.0, 1.9, 1.5, 1.5, 1.4, 1.5, 1.2, 1.5, 1.3, 1.3, 1.9, 1.6]
-    }, {
-        name: 'Secnd One',
-        data: [1.1, 1.2, 1.7, 1.5, 1.9, 1.2, 11.0, 1.6, 1.2, 1.3,0.6, 0.8]
-    }]
-});
+             }
+            },
+            series: [{
+               name: 'First One',
+               data: [1.0, 1.9, 1.5, 1.5, 1.4, 1.5, 1.2, 1.5, 1.3, 1.3, 1.9, 1.6]
+            }, {
+               name: 'Secnd One',
+               data: [1.1, 1.2, 1.7, 1.5, 1.9, 1.2, 11.0, 1.6, 1.2, 1.3,0.6, 0.8]
+            }]
+            });
 
         </script>
+        <div></div>
     </body>
 </html>
