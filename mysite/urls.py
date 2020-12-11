@@ -5,5 +5,5 @@ from FirePredict import views
 urlpatterns = [
     #path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('FirePredict/firedata_detail/<int:fire_id>',views.firedata_detail,name ="firedata_detail")
+    path('FirePredict/firedata_detail',views.firedata_detail,name ="firedata_detail")
 ]

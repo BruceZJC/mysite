@@ -4,3 +4,4 @@ from django.db import models
 class FireData(models.Model):
     fire_weather_index = models.CharField(max_length=5)
     date = models.TextField()
+    
